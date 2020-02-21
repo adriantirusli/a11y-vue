@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <Header/>
+    
     <Navigation/>
 
     <v-content>
@@ -9,10 +10,12 @@
 
         <v-spacer></v-spacer>
 
-        <HelloWorld/>
+        
       </div>
     </v-content>
-
+    <aside>
+      <HelloWorld/>
+    </aside>
     <Footer/>
   </v-app>
 </template>

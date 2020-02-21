@@ -1,24 +1,28 @@
 <template>
-    <v-navigation-drawer permanent>
-      <v-list
-        dense
-        nav
-      >
-        <v-list-item
-          v-for="item in items"
-          :key="item.title"
-          link
-        >
-          <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-icon>
+  <div>
 
-          <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
+
+      <v-menu
+        left
+        bottom
+      >
+        <template v-slot:activator="{ on }">
+          <v-btn icon v-on="on">
+            <v-icon>mdi-dots-vertical</v-icon>
+          </v-btn>
+        </template>
+
+        <v-list>
+          <v-list-item
+            v-for="n in 5"
+            :key="n"
+            @click="() => {}"
+          >
+            <v-list-item-title>Option {{ n }}</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+  </div>
 </template>
 
 <script>
