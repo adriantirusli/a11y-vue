@@ -3,7 +3,7 @@
         <v-btn
             v-for="nav in navs"
             :key="nav.title"
-            href="https://github.com/vuetifyjs/vuetify/releases/latest"
+            href="#"
             target="_blank"
             text
         >

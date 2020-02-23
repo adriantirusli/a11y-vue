@@ -1,18 +1,17 @@
 <template>
-    <v-card height="50">
-        <v-footer
-            absolute
-            class="font-weight-medium"
-            dark
+    <v-footer
+        absolute
+        class="font-weight-medium"
+        dark
+        role="contentInfo"
+    >
+        <v-col
+        class="text-center"
+        cols="12"
         >
-            <v-col
-            class="text-center"
-            cols="12"
-            >
-            {{ new Date().getFullYear() }} — <strong>Footer</strong>
-            </v-col>
-        </v-footer>
-    </v-card>
+        {{ new Date().getFullYear() }} — <strong>Footer</strong>
+        </v-col>
+    </v-footer>
 </template>
 
 <script>

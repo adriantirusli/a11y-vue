@@ -2,7 +2,7 @@
     <v-app-bar
       app
       dark
-      aria-label="banner"
+      role="banner"
     >
       <div class="d-flex align-center">
         <v-toolbar-title>Header</v-toolbar-title>
